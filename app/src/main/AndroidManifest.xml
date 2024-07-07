@@ -13,6 +13,15 @@
         android:theme="@style/Theme.MEDEASY"
         tools:targetApi="31">
         <activity
+            android:name=".HEALTHYFOOD"
+            android:exported="false" />
+        <activity
+            android:name=".SUPLEMENTS"
+            android:exported="false" />
+        <activity
+            android:name=".MEDICINES"
+            android:exported="false" />
+        <activity
             android:name=".cart"
             android:exported="false" />
         <activity
