@@ -1,10 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SUPLEMENTS">
+    android:orientation="vertical"
+    android:background="@color/white">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Header Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/cart_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUPPLEMENTS"
+            android:textSize="24sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginStart="16dp" />
+
+    </LinearLayout>
+
+    <!-- Cart Items Section -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cart_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp" />
+
+    <!-- Subtotal Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/subtotal_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subtotal:"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/subtotal_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹ 0.00"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary" />
+
+    </LinearLayout>
+
+    <!-- Checkout Button Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/checkout_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Checkout"
+            android:backgroundTint="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

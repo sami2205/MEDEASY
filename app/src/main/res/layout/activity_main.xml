@@ -32,19 +32,20 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <TextView
+        <EditText
             android:id="@+id/user_name"
-            android:layout_width="267dp"
-            android:layout_height="35dp"
-            android:text="Username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
             android:textColor="@color/colorPrimary"
             android:textSize="18sp" />
 
-        <TextView
+        <EditText
             android:id="@+id/user_email"
-            android:layout_width="261dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Email"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
             android:textColor="@color/colorPrimary"
             android:textSize="18sp" />
 
@@ -62,7 +63,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/colorPrimary"
-            android:text="Login" />
+            android:text=" Login" />
 
         <Button
             android:id="@+id/logout_button"
